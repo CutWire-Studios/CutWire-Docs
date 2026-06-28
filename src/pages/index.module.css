@@ -1,0 +1,42 @@
+/* Docs landing page — CutWire Docs. */
+
+.main {
+  padding: 4rem 0 2rem;
+}
+
+.pageHead {
+  margin-bottom: 2.5rem;
+  max-width: 60ch;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.pageTitle {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.25rem, 5vw, 3.25rem);
+  line-height: 1.0;
+  letter-spacing: -0.03em;
+  margin: 0.75rem 0 1rem;
+  color: var(--text);
+}
+
+.pageLede {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+@media screen and (max-width: 996px) {
+  .main {
+    padding: 2.5rem 0 1rem;
+  }
+}
