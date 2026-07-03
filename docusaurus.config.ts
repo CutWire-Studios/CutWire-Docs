@@ -36,6 +36,30 @@ const config: Config = {
   headTags: [
     {
       tagName: "link",
+      attributes: {
+        rel: "icon",
+        type: "image/x-icon",
+        href: "/img/favicon.ico",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "icon",
+        type: "image/png",
+        href: "/img/favicon-32x32.png",
+        sizes: "32x32",
+      },
+    },
+    {
+      tagName: "link",
+      attributes: {
+        rel: "manifest",
+        href: "/manifest.webmanifest",
+      },
+    },
+    {
+      tagName: "link",
       attributes: { rel: "preconnect", href: "https://fonts.googleapis.com" },
     },
     {
