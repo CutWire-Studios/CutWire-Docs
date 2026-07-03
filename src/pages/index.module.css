@@ -1,4 +1,4 @@
-/* Docs landing page — CutWire Docs. */
+/* Docs landing page — Lumina Dark, aligned with CutWire-Web. */
 
 .main {
   padding: 4rem 0 2rem;
@@ -10,27 +10,40 @@
 }
 
 .eyebrow {
-  font-family: var(--font-mono);
-  font-weight: 500;
-  font-size: 0.8125rem;
-  letter-spacing: 0.1em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  color: var(--text-muted);
+  color: var(--primary);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
+  flex-shrink: 0;
 }
 
 .pageTitle {
   font-family: var(--font-display);
-  font-weight: 600;
+  font-weight: 700;
   font-size: clamp(2.25rem, 5vw, 3.25rem);
-  line-height: 1.0;
-  letter-spacing: -0.03em;
+  line-height: 1.125;
+  letter-spacing: -0.04em;
   margin: 0.75rem 0 1rem;
   color: var(--text);
 }
 
 .pageLede {
   font-size: 1.125rem;
-  line-height: 1.6;
+  line-height: 1.75;
+  letter-spacing: -0.01em;
   color: var(--text-muted);
   margin: 0;
 }

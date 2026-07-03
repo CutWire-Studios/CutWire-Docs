@@ -14,7 +14,7 @@ export default function Home(): ReactNode {
       <main className={styles.main}>
         <div className="container">
           <header className={styles.pageHead}>
-            <span className={styles.eyebrow}>CUTWIRE STUDIOS · DOCS</span>
+            <span className={styles.eyebrow}>CutWire Studios · Docs</span>
             <h1 className={styles.pageTitle}>{siteConfig.title}</h1>
             <p className={styles.pageLede}>
               Documentation for the software CutWire Studios builds. Pick a

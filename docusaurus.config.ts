@@ -26,10 +26,10 @@ const config: Config = {
     locales: ["en"],
   },
 
-  // Preconnect + load the three console faces (Space Grotesk / Inter / JetBrains Mono).
+  // Preconnect + load Lumina Dark faces (Hanken Grotesk / JetBrains Mono).
   stylesheets: [
     {
-      href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&family=Space+Grotesk:wght@500;600;700&display=swap",
+      href: "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap",
       type: "text/css",
     },
   ],
@@ -129,8 +129,8 @@ const config: Config = {
       copyright: `CUTWIRE STUDIOS · docs.cutwire.org · BUILD ${new Date().getFullYear()}.0 — wired for live.`,
     },
     prism: {
-      theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
+      theme: prismThemes.oneDark,
+      darkTheme: prismThemes.oneDark,
     },
   } satisfies Preset.ThemeConfig,
 };
