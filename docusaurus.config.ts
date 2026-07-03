@@ -52,13 +52,13 @@ const config: Config = {
     [
       "classic",
       {
-        // SwitchX docs live at /switchx. Each product is its own docs space.
+        // CutWire Prism docs live at /prism. Each product is its own docs space.
         // To add a product, register another docs plugin instance below
         // (see `plugins`) with its own id / path / routeBasePath.
         docs: {
-          id: "switchx",
-          path: "docs/switchx",
-          routeBasePath: "switchx",
+          id: "prism",
+          path: "docs/prism",
+          routeBasePath: "prism",
           sidebarPath: "./sidebars.ts",
           editUrl: "https://github.com/cutwire/cutwire-docs/tree/main/",
         },
@@ -101,9 +101,9 @@ const config: Config = {
         href: "/",
       },
       items: [
-        { to: "/switchx", label: "SwitchX Docs", position: "left" },
+        { to: "/prism", label: "CutWire Prism Docs", position: "left" },
         // Context-aware CTA: links to cutwire.org on the docs home,
-        // and to cutwire.org/switchx inside the SwitchX docs.
+        // and to cutwire.org/prism inside the CutWire Prism docs.
         { type: "custom-contextualCta", position: "right" },
       ],
     },
@@ -112,13 +112,13 @@ const config: Config = {
       links: [
         {
           title: "Products",
-          items: [{ label: "SwitchX", to: "/switchx" }],
+          items: [{ label: "CutWire Prism", to: "/prism" }],
         },
         {
           title: "CutWire Studios",
           items: [
             { label: "cutwire.org", href: "https://cutwire.org" },
-            { label: "SwitchX", href: "https://cutwire.org/switchx" },
+            { label: "CutWire Prism", href: "https://cutwire.org/prism" },
           ],
         },
         {

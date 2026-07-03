@@ -5,7 +5,7 @@ title: The interface
 
 # The interface
 
-SwitchX runs in two windows: the **main control window** and the **Output
+CutWire Prism runs in two windows: the **main control window** and the **Output
 window**. This page walks through every pane, button, and menu in the main
 window. (Dialogs that belong to individual clip elements are covered under
 [Clip elements](./clip-elements/overview).)
@@ -45,7 +45,7 @@ the canvas.
 
 The large workspace in the centre. Every media element is a **card** here, and
 you connect cards together to build your media flow. This is the heart of
-SwitchX — it has its own page: [Node editor](./node-editor/overview).
+CutWire Prism — it has its own page: [Node editor](./node-editor/overview).
 
 When the canvas is empty it shows a **Get Started** placeholder with an **Add
 Element ▾** button.
@@ -143,7 +143,7 @@ if your build doesn't include them.)
 
 ## Output window
 
-A separate window titled **SwitchX - Output Monitor** that shows only the final
+A separate window titled **CutWire Prism - Output Monitor** that shows only the final
 program mix — no controls, no overlays. Put it on your projector or capture it
 with OBS. Make it full screen for a clean feed, and use **View → Stay on Top** to
 keep it above other windows.

@@ -6,7 +6,7 @@ title: Text
 # Text
 
 A **Text** element is a styled text source — titles, lower thirds, captions,
-names, and labels rendered directly by SwitchX. Unlike an HTML overlay it needs no
+names, and labels rendered directly by CutWire Prism. Unlike an HTML overlay it needs no
 markup; you just type and style.
 
 **Add it:** **Add Element → Text…**, which opens the **Text Editor**.

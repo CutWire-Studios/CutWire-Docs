@@ -3,14 +3,14 @@ import {useLocation} from '@docusaurus/router';
 import Link from '@docusaurus/Link';
 
 // Right-side navbar button that depends on where you are:
-//  - inside /switchx docs  -> cutwire.org/switchx
-//  - anywhere else         -> cutwire.org
+//  - inside /prism docs  -> cutwire.org/prism
+//  - anywhere else       -> cutwire.org
 // Future products under /{name} can be added to the map below.
 const PRODUCT_CTAS: {match: string; label: string; href: string}[] = [
   {
-    match: '/switchx',
-    label: 'cutwire.org/switchx ↗',
-    href: 'https://cutwire.org/switchx',
+    match: '/prism',
+    label: 'cutwire.org/prism ↗',
+    href: 'https://cutwire.org/prism',
   },
 ];
 

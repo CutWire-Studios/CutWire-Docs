@@ -5,7 +5,7 @@ title: Audio nodes
 
 # Audio nodes
 
-SwitchX routes sound through the node graph, just like video. There are three
+CutWire Prism routes sound through the node graph, just like video. There are three
 audio pieces:
 
 - the **audio strip** on a media clip that has sound,
@@ -38,7 +38,7 @@ The clip's **audio port** lets you route that sound onward — for example into 
 ## Master Audio Output node
 
 The **Master Audio Output** node decides **which device** audio plays out of.
-By default SwitchX uses the system default output; add this node when you need to
+By default CutWire Prism uses the system default output; add this node when you need to
 send audio to a specific interface (a PA feed, a separate sound card, headphones).
 
 **Add it:** right‑click the empty canvas → **Add Master Audio Output**.

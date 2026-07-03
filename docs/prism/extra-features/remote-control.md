@@ -5,7 +5,7 @@ title: Remote control
 
 # Remote control
 
-SwitchX has a built‑in web server that lets you drive the mix from another device —
+CutWire Prism has a built‑in web server that lets you drive the mix from another device —
 a phone, tablet, or second laptop — over your network. Open a browser on that
 device and you can trigger clips, move the fader, cut, and run auto transitions
 without touching the main machine.
@@ -26,7 +26,7 @@ If a firewall prompt appears, allow it so the remote device can connect.
 
 ## Connecting from another device
 
-1. Make sure the remote device is on the **same network** as the SwitchX machine.
+1. Make sure the remote device is on the **same network** as the CutWire Prism machine.
 2. Scan the QR code, or type the shown URL (e.g. `http://<your-ip>:38470/`) into
    the device's browser.
 3. The remote console loads — no app install needed.

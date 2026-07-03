@@ -5,7 +5,7 @@ title: Media file (video)
 
 # Media file (video)
 
-A **Media File** element plays a video from disk through SwitchX's FFmpeg engine.
+A **Media File** element plays a video from disk through CutWire Prism's FFmpeg engine.
 It's the workhorse element for highlight reels, replays, music videos, and any
 pre‑recorded footage.
 

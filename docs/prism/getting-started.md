@@ -6,13 +6,13 @@ title: Getting started
 # Getting started
 
 This page walks you from an empty workspace to your first live mix. It assumes
-SwitchX is already installed and open.
+CutWire Prism is already installed and open.
 
-When SwitchX launches you'll see two windows:
+When CutWire Prism launches you'll see two windows:
 
 - The **main window** — your control surface (clip canvas on top, decks and
   crossfader below).
-- The **Output window** (*SwitchX - Output Monitor*) — the program mix your
+- The **Output window** (*CutWire Prism - Output Monitor*) — the program mix your
   audience sees. Move this to your projector or second screen.
 
 ## 1. Add some media
@@ -85,7 +85,7 @@ Click again to release.
 ## 6. Save your show
 
 **Media → Save Session…** (Ctrl+S) stores your whole layout — every element,
-connection, hotkey, and the crossfader state. SwitchX also **autosaves** and will
+connection, hotkey, and the crossfader state. CutWire Prism also **autosaves** and will
 offer to recover your work if it closed unexpectedly. To move a show to another
 machine, use **Export Project…** to bundle the session and its media into one
 portable file.

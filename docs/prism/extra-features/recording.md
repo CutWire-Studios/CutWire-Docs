@@ -5,7 +5,7 @@ title: Recording
 
 # Recording
 
-SwitchX can record your show to disk while you run it — the program mix and, where
+CutWire Prism can record your show to disk while you run it — the program mix and, where
 available, individual streams — with timestamped markers you drop on the fly.
 
 ## The Recording Panel
@@ -30,7 +30,7 @@ song — so you can find them again in the footage:
 
 - **View → Drop Marker** (or **Ctrl+M**) prompts for a label and stamps it into
   the active recording at the current time.
-- SwitchX also drops automatic markers when you fire a new clip to a deck, noting
+- CutWire Prism also drops automatic markers when you fire a new clip to a deck, noting
   which clip went live.
 
 ## Tips

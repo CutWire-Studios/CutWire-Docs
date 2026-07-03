@@ -5,7 +5,7 @@ title: Phone camera
 
 # Phone camera (WebRTC)
 
-A **Phone Camera** element streams a smartphone's camera into SwitchX over Wi‑Fi
+A **Phone Camera** element streams a smartphone's camera into CutWire Prism over Wi‑Fi
 using WebRTC — no app store download or cable required for the basic browser path.
 It's a quick way to add a roaming camera: a crowd cam, a touchline view, a
 backstage feed.
@@ -21,16 +21,16 @@ backstage feed.
    - **Local network (LAN)** — phone and PC on the same Wi‑Fi (the usual choice).
    - **Public relay server** — for connecting over the internet via a relay you
      run (advanced).
-2. SwitchX shows a **QR code** and a "Waiting for phone…" status.
+2. CutWire Prism shows a **QR code** and a "Waiting for phone…" status.
 3. On the phone, **scan the QR code**:
    - Your phone's camera app opens a browser streamer page, **or**
-   - The SwitchX companion app pairs natively.
+   - The CutWire Prism companion app pairs natively.
 4. Once the phone connects, the status changes to **Connected** and the live
    feed appears as a card.
 
 On the LAN path your phone may warn about a self‑signed certificate — accept it so
 the camera can start. If a firewall prompt appears on the PC, allow it so the
-phone can reach SwitchX.
+phone can reach CutWire Prism.
 
 ## What it can do
 

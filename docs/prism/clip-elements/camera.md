@@ -13,7 +13,7 @@ webcam, a capture card, or any video input the system recognises.
 ## Choosing a device
 
 The picker lists every detected video input by name. If you don't choose a
-specific one, pick **Default Camera** and SwitchX lets the system decide. The list
+specific one, pick **Default Camera** and CutWire Prism lets the system decide. The list
 combines devices reported by the OS with any additional capture nodes found on the
 machine, so a capture card showing your main camera or console feed will appear
 here too.

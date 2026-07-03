@@ -5,7 +5,7 @@ title: HTML overlay
 
 # HTML overlay
 
-An **HTML Overlay** element renders a web page inside SwitchX — HTML, CSS, and
+An **HTML Overlay** element renders a web page inside CutWire Prism — HTML, CSS, and
 JavaScript. It's how you build dynamic graphics like **scoreboards, clocks, and
 countdown timers**, and any custom motion graphic you can express on the web.
 

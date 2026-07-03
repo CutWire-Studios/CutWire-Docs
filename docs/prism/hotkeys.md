@@ -5,17 +5,17 @@ title: Hotkeys
 
 # Hotkeys
 
-SwitchX is built for fast, keyboard‑driven triggering during a live show. Each
+CutWire Prism is built for fast, keyboard‑driven triggering during a live show. Each
 clip card can be bound to a key — press it to fire the clip to **Deck A**, or hold
 **Shift** to fire it to **Deck B**.
 
 ## How clip triggers work
 
-- When you add a card, SwitchX **auto‑assigns** it the next free key from the grid
+- When you add a card, CutWire Prism **auto‑assigns** it the next free key from the grid
   below. The key shows as a small badge on the card.
 - Press the key → the clip goes to **Deck A**.
 - Press **Shift + key** → the clip goes to **Deck B**.
-- Bindings are saved with your session, and SwitchX remembers a clip's key by its
+- Bindings are saved with your session, and CutWire Prism remembers a clip's key by its
   media so the same clip tends to get the same key next time.
 
 ## The trigger grid

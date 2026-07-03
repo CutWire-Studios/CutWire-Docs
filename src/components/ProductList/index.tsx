@@ -16,11 +16,11 @@ type Product = {
 // docs space at /{name}; add a new entry here when its docs ship.
 const PRODUCTS: Product[] = [
   {
-    name: 'SwitchX',
+    name: 'CutWire Prism',
     tagline: 'Trigger. Mix. Create. Live.',
     blurb: 'A live media console for triggering clips, mixing sources, and running shows.',
     status: 'live',
-    to: '/switchx',
+    to: '/prism',
   },
 ];
 

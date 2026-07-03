@@ -5,7 +5,7 @@ title: Virtual camera & network output
 
 # Virtual camera & network output
 
-Beyond the projector, SwitchX can send your program mix to other apps and
+Beyond the projector, CutWire Prism can send your program mix to other apps and
 machines: as a **virtual webcam**, as an **NDI** network stream, and to **mirror
 windows**.
 
@@ -13,9 +13,9 @@ windows**.
 
 Toggle **View → Virtual Camera Output** to expose the program mix as a **webcam**
 that other applications can select — Zoom, Teams, OBS, a browser, etc. Pick
-"SwitchX" as the camera in that app and it sees your live mix.
+"CutWire Prism" as the camera in that app and it sees your live mix.
 
-This is the easiest way to put SwitchX into a video call or another capture tool
+This is the easiest way to put CutWire Prism into a video call or another capture tool
 without any cabling or capture card.
 
 > Virtual camera is platform‑dependent. On Linux it requires the `v4l2loopback`
@@ -25,12 +25,12 @@ without any cabling or capture card.
 ## NDI Program output
 
 Toggle **View → NDI Program Output** to broadcast the program mix as an **NDI**
-source on your network (named *SwitchX Program*). Other NDI‑aware tools — OBS,
-vMix, another SwitchX, an NDI monitor — can then receive it over the LAN with no
+source on your network (named *CutWire Prism Program*). Other NDI‑aware tools — OBS,
+vMix, another CutWire Prism, an NDI monitor — can then receive it over the LAN with no
 cables.
 
 Combined with the [NDI source](../clip-elements/ndi) element (which *receives*
-NDI), this lets SwitchX sit anywhere in an NDI production chain.
+NDI), this lets CutWire Prism sit anywhere in an NDI production chain.
 
 > NDI is an optional feature. If your build doesn't include it the menu item is
 > disabled.

@@ -10,7 +10,7 @@ export default function Home(): ReactNode {
   return (
     <Layout
       title="Docs"
-      description="Documentation for CutWire Studios software — SwitchX and what comes next.">
+      description="Documentation for CutWire Studios software — CutWire Prism and what comes next.">
       <main className={styles.main}>
         <div className="container">
           <header className={styles.pageHead}>

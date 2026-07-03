@@ -6,7 +6,7 @@ title: Layer node
 # Layer node
 
 The **Layer node** stacks several video streams on top of each other on a
-shared canvas — SwitchX's compositing node. It replaces the old "transform
+shared canvas — CutWire Prism's compositing node. It replaces the old "transform
 context" node.
 
 **Add it:** right‑click the empty canvas → **Add → Switching Node → Layer**.
