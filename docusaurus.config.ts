@@ -16,8 +16,8 @@ const config: Config = {
   url: "https://docs.cutwire.org",
   baseUrl: "/",
 
-  organizationName: "cutwire",
-  projectName: "cutwire-docs",
+  organizationName: "cutwire-studios",
+  projectName: "CutWire-Docs",
 
   onBrokenLinks: "throw",
 
@@ -84,7 +84,7 @@ const config: Config = {
           path: "docs/prism",
           routeBasePath: "prism",
           sidebarPath: "./sidebars.ts",
-          editUrl: "https://github.com/cutwire/cutwire-docs/tree/main/",
+          editUrl: "https://github.com/CutWire-Studios/CutWire-Docs/tree/main/",
         },
         blog: false,
         theme: {
@@ -147,7 +147,7 @@ const config: Config = {
         },
         {
           title: "More",
-          items: [{ label: "GitHub", href: "https://github.com/cutwire" }],
+          items: [{ label: "GitHub", href: "https://github.com/CutWire-Studios/CutWire-Docs" }],
         },
       ],
       copyright: `CUTWIRE STUDIOS · docs.cutwire.org · BUILD ${new Date().getFullYear()}.0 — wired for live.`,
