@@ -29,7 +29,7 @@ deck it's fired to.
 
 Shader cards have an extra **audio‑in port**. Wire a sound source into it — a
 [clip's audio](../node-editor/audio-output-node) or a
-[Master Audio Input](../node-editor/audio-output-node) (microphone/line‑in) — and
+[Mic Input](../node-editor/audio-output-node#mic-input-node) (microphone/line‑in) — and
 the shader receives a live audio spectrum it can react to. Several built‑in
 presets (the "audio pulse", "VU bars", and "reactive wave" shaders) are designed
 to pulse and move with the sound.

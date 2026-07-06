@@ -31,6 +31,9 @@ week of setup.
   between them with 20+ transition styles.
 - **Layer and arrange** — stack elements, place them on a canvas, and group them
   using the node editor.
+- **Process audio live** — chain [audio effect nodes](./node-editor/audio-effect-node)
+  (EQ, compression, gates, reverb, and more) on clip or mic streams before they
+  hit the speakers.
 - **Go live** — open a full‑screen output, send NDI, expose a virtual webcam,
   record the program, and drive everything from your phone.
 

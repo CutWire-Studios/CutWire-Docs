@@ -23,23 +23,29 @@ Video flows from left to right through four node types:
   program output.
 
 You connect nodes by dragging from one node's port (the little coloured dot) to
-another's. Wires come in two colours:
+another's. Wires come in three colours:
 
 - **Blue** wires carry a video stream.
 - **Red** wires carry an A/B deck selection (only between
   [A/B Select nodes](./ab-select-node) and the [Output node](./output-node)).
+- **Yellow** wires carry a single raw audio stream (clip audio, mic, effect
+  in/out, mixer inputs).
+- **Orange** wires carry mixed or output-ready audio (mixer output, shader
+  audio-in, Audio Output device ports). See
+  [Audio nodes](./audio-output-node) and [Audio effect nodes](./audio-effect-node).
 
 ## Adding nodes
 
-- **Clips / sources** are added the same way as before — through the app's
-  normal **Add Element** menu, or by dragging media files onto the canvas. See
+- **Clips / sources** are added through the **Add Element** menu (including
+  **Mic Input…**), or by dragging media files onto the canvas. See
   [Clip elements](../clip-elements/overview).
 - **Everything else** is added from the canvas **right‑click menu**:
-  - **Add → Input Node** – add another source
-  - **Add → Process Node → Crop / Flip Horizontal / Flip Vertical**
-  - **Add → Switching Node → Layer / A/B Deck Select**
-  - You can also still add [Master Audio Output, Master Audio Input](./audio-output-node),
-    and [Script nodes](./script-node) here.
+  - **Add Input Node…** – add another source
+  - **Add Process Node → Crop / Flip Horizontal / Flip Vertical**
+  - **Add Switching Node → Layer / A/B Deck Select**
+  - **Add Audio Effect Node →** (effect list)
+  - **Add Audio Output**, **Add Audio Mixer**, and [Script nodes](./script-node)
+    See [Audio nodes](./audio-output-node) for routing, mixers, and effects.
 - **The Output node appears automatically** as soon as your graph has at least
   one node. There is always exactly one, and it can't be deleted while other
   nodes exist.
@@ -55,8 +61,9 @@ right edge — that's the video stream leaving the node.
   edit a shader, etc.).
 - Video and image inputs keep their **trim** controls but **no longer have
   crop** — cropping now lives on a [Process node](#2-process-nodes-effects).
-- Sources with audio still have their audio port and can be wired to a
-  [Master Audio Output](./audio-output-node) as before.
+- Sources with audio still have a yellow audio port and can be wired to an
+  [Audio Output](./audio-output-node) device port, through mixers and effects,
+  as before.
 
 Inputs no longer have A/B buttons or transform controls — those jobs moved to
 the Switching nodes.
