@@ -11,8 +11,11 @@ pieces are:
 - the **audio strip** on a clip that has sound,
 - **[Audio effect nodes](./audio-effect-node)** for real-time DSP on a stream,
 - the **Audio Output** node (where audio plays out),
-- **Mic Input** nodes (microphone or line‑in), and
-- **Audio Mixer** nodes (blend multiple streams before an output).
+- **Mic Input** nodes (microphone or line‑in),
+- **Audio Capture** nodes (system / loopback audio from an output device),
+- **Audio Mixer** nodes (blend multiple streams before an output), and
+- **[Audio Script nodes](./audio-script-node)** (turn audio into live data for
+  shaders and scripts).
 
 Audio wires use two colours:
 
@@ -79,6 +82,36 @@ commentary, a stage mic, a music feed.
 - Volume and mute for a mic follow the **mixer slot** it is wired into, not the
   mic node itself.
 
+## Audio Capture node
+
+An **Audio Capture** node brings **system / loopback audio** into the graph — the
+sound that is *playing out of* a chosen output device (speakers or headphones).
+Use it to react to or re‑route audio from other apps (a browser, a media player,
+a game) without a microphone or cables.
+
+> This captures an **output** device's sound. To capture a **microphone or
+> line‑in**, use the [Mic Input node](#mic-input-node) instead.
+
+**Add it:** right‑click the empty canvas → **Add Audio Capture** (or **Add
+Element → Audio Capture…**).
+
+- The node has a yellow **output port** on the right — wire it into an
+  **Audio Mixer**, through [Audio effect nodes](./audio-effect-node), into a
+  [shader's audio‑in](../clip-elements/shader) or an
+  [Audio Script node](./audio-script-node), or to an **Audio Output** device port.
+- Click **Edit** (or right‑click → **Edit Audio Capture…**) to pick the
+  **Playback Device** to capture. The list starts with **System Default Output**
+  and then every other output device. A hint below the dropdown confirms the
+  monitor source Prism found — pick the device that is **actually playing sound**
+  (e.g. speakers vs. headset).
+
+**Platform notes.** Capture works out of the box with the default output on both
+Linux and Windows; you only choose a device if you want a specific one.
+
+- **Linux** uses **PipeWire** — make sure the `gst-plugin-pipewire` GStreamer
+  plugin is installed (the same one screen capture needs).
+- **Windows** uses **WASAPI loopback** on the render endpoint.
+
 ## Audio Mixer node
 
 The **Audio Mixer** blends several yellow audio streams into one orange output.
@@ -113,7 +146,10 @@ The mixer has:
 - **Mix clip + mic to one PA:** clip audio port → mixer input; Mic Input → mixer
   input → mixer out → Audio Output (PA port). Use **Edit Mix** for levels.
 - **Make a shader pulse to music:** clip audio port (or Mic Input) → shader's
-  audio‑in port.
+  audio‑in port, or route through an [Audio Script node](./audio-script-node) for
+  control over the FFT/beat tuning.
+- **React to another app's sound:** [Audio Capture](#audio-capture-node) →
+  [Audio Script](./audio-script-node) → shader audio‑in.
 - **Gate and limit a mic feed:** Mic Input → Noise Gate → Limiter → Audio Output.
   See [Audio effect nodes](./audio-effect-node) for the full list of effects and
   dial controls.
