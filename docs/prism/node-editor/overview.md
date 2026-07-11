@@ -41,11 +41,15 @@ another's. Wires come in three colours:
   [Clip elements](../clip-elements/overview).
 - **Everything else** is added from the canvas **right‑click menu**:
   - **Add Input Node…** – add another source
-  - **Add Process Node → Crop / Flip Horizontal / Flip Vertical**
+  - **Add Process Node → Crop / Flip / Rotate / Opacity / Chroma Key / Blur /
+    Sharpen / Keystone / Polygonal Masking / Remove Background**
   - **Add Switching Node → Layer / A/B Deck Select**
   - **Add Audio Effect Node →** (effect list)
-  - **Add Audio Output**, **Add Audio Mixer**, and [Script nodes](./script-node)
+  - **Add Audio Output**, **Add Audio Mixer**, **Add Audio Capture**,
+    **Add Mic Input**, and audio/data nodes.
     See [Audio nodes](./audio-output-node) for routing, mixers, and effects.
+  - **Script nodes** — [Script Node](./script-node), **Audio Script Node**, and
+    **Trigger Node** for live data and audio‑reactive visuals.
 - **The Output node appears automatically** as soon as your graph has at least
   one node. There is always exactly one, and it can't be deleted while other
   nodes exist.
@@ -71,14 +75,14 @@ the Switching nodes.
 ### 2. Process nodes (effects)
 
 A [Process node](./process-node) has **one blue input** (left) and **one blue
-output** (right). It applies a single effect to whatever passes through:
-
-- **Crop** – click **Edit** to draw the crop region.
-- **Flip Horizontal**
-- **Flip Vertical**
+output** (right). It applies a single effect to whatever passes through —
+**Crop, Flip, Rotate, Opacity, Chroma Key, Blur, Sharpen, Keystone /
+Perspective, Polygonal Masking**, and **Remove Background** (on builds with
+segmentation). Click **Edit** to adjust each effect's settings.
 
 Chain as many as you like, in any order — effects are applied in the order
-they're connected. For example: `Input → Crop → Flip Horizontal → …`.
+they're connected. For example: `Input → Crop → Flip → Blur → …`. You can also
+drag a Process node **onto an existing wire** to splice it into the chain.
 
 > Tip: Process nodes attach directly to an Input (or to another Process node).
 > Put your crops/flips before you stack things into a Layer.
