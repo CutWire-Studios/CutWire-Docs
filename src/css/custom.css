@@ -118,20 +118,6 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-/* Ambient orange glow — matches CutWire-Web hero atmosphere. */
-body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    z-index: 0;
-    pointer-events: none;
-    background: radial-gradient(
-        circle at 50% -10%,
-        rgba(255, 77, 0, 0.14) 0%,
-        rgba(255, 77, 0, 0) 55%
-    );
-}
-
 /* ------------------------------------------------------------------ *
  * Typography
  * ------------------------------------------------------------------ */
