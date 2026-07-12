@@ -41,13 +41,13 @@ week of setup.
 
 ## How the pieces fit together
 
-|| Concept | What it is |
-||---|---|
-|| **Clip Library / Asset Library** | The sidebar list of media files you've loaded, ready to drop onto the canvas. |
-|| **Node editor (clip canvas)** | The main workspace where every media element lives as a card you can wire together. |
-|| **A/B decks** | The two live channels. Each holds one element at a time and has its own preview, play/pause, and speed. |
-|| **Crossfader** | The slider (plus AUTO/CUT and transition styles) that blends Deck A into Deck B on the program output. |
-|| **Output** | The program mix — what your audience sees — shown in the Output window and sent to projectors, NDI, virtual camera, and recordings. |
+| Concept | What it is |
+|---|---|
+| **Clip Library / Asset Library** | The sidebar list of media files you've loaded, ready to drop onto the canvas. |
+| **Node editor (clip canvas)** | The main workspace where every media element lives as a card you can wire together. |
+| **A/B decks** | The two live channels. Each holds one element at a time and has its own preview, play/pause, and speed. |
+| **Crossfader** | The slider (plus AUTO/CUT and transition styles) that blends Deck A into Deck B on the program output. |
+| **Output** | The program mix — what your audience sees — shown in the Output window and sent to projectors, NDI, virtual camera, and recordings. |
 
 ## Start here
 
