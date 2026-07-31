@@ -125,7 +125,7 @@ const config: Config = {
       },
       items: [
         { to: "/prism", label: "CutWire Prism Docs", position: "left" },
-        { to: "/drift", label: "Drift Docs", position: "left" },
+        { to: "/drift", label: "CutWire Drift Docs", position: "left" },
         // Context-aware CTA: links to cutwire.org on the docs home,
         // and to the product page (or GitHub) inside each product's docs.
         { type: "custom-contextualCta", position: "right" },
@@ -138,7 +138,7 @@ const config: Config = {
           title: "Products",
           items: [
             { label: "CutWire Prism", to: "/prism" },
-            { label: "Drift", to: "/drift" },
+            { label: "CutWire Drift", to: "/drift" },
           ],
         },
         {
@@ -146,7 +146,7 @@ const config: Config = {
           items: [
             { label: "cutwire.org", href: "https://cutwire.org" },
             { label: "CutWire Prism", href: "https://cutwire.org/prism" },
-            { label: "Drift", href: "https://github.com/CutWire-Studios/Drift" },
+            { label: "CutWire Drift", href: "https://cutwire.org/drift" },
           ],
         },
         {

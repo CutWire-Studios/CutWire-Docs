@@ -24,7 +24,7 @@ const PRODUCTS: Product[] = [
     to: "/prism",
   },
   {
-    name: "Drift",
+    name: "CutWire Drift",
     tagline: "Create polished videos fast — free, open, and yours.",
     blurb:
       "A desktop video editor for trimming clips, effects, captions, and export — with no subscription or watermark.",
