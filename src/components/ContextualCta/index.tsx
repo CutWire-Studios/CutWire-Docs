@@ -12,6 +12,11 @@ const PRODUCT_CTAS: {match: string; label: string; href: string}[] = [
     label: 'cutwire.org/prism ↗',
     href: 'https://cutwire.org/prism',
   },
+  {
+    match: '/drift',
+    label: 'GitHub ↗',
+    href: 'https://github.com/CutWire-Studios/Drift',
+  },
 ];
 
 export default function ContextualCta(): ReactNode {

@@ -94,20 +94,19 @@ const config: Config = {
     ],
   ],
 
-  // Future products drop in here as additional docs instances, one per
-  // /{software} route — no other changes needed:
-  //
-  // plugins: [
-  //   [
-  //     '@docusaurus/plugin-content-docs',
-  //     {
-  //       id: 'patchwork',
-  //       path: 'docs/patchwork',
-  //       routeBasePath: 'patchwork',
-  //       sidebarPath: './sidebars.ts',
-  //     },
-  //   ],
-  // ],
+  // Additional product docs instances, one per /{software} route.
+  plugins: [
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "drift",
+        path: "docs/drift",
+        routeBasePath: "drift",
+        sidebarPath: "./sidebars.ts",
+        editUrl: "https://github.com/CutWire-Studios/CutWire-Docs/tree/main/",
+      },
+    ],
+  ],
 
   themeConfig: {
     image: "img/docusaurus-social-card.jpg",
@@ -126,8 +125,9 @@ const config: Config = {
       },
       items: [
         { to: "/prism", label: "CutWire Prism Docs", position: "left" },
+        { to: "/drift", label: "Drift Docs", position: "left" },
         // Context-aware CTA: links to cutwire.org on the docs home,
-        // and to cutwire.org/prism inside the CutWire Prism docs.
+        // and to the product page (or GitHub) inside each product's docs.
         { type: "custom-contextualCta", position: "right" },
       ],
     },
@@ -136,13 +136,17 @@ const config: Config = {
       links: [
         {
           title: "Products",
-          items: [{ label: "CutWire Prism", to: "/prism" }],
+          items: [
+            { label: "CutWire Prism", to: "/prism" },
+            { label: "Drift", to: "/drift" },
+          ],
         },
         {
           title: "CutWire Studios",
           items: [
             { label: "cutwire.org", href: "https://cutwire.org" },
             { label: "CutWire Prism", href: "https://cutwire.org/prism" },
+            { label: "Drift", href: "https://github.com/CutWire-Studios/Drift" },
           ],
         },
         {
