@@ -5,65 +5,102 @@ title: The interface
 
 # The interface
 
-Drift’s main window is one workspace: assets on the left, preview in the center,
-properties on the right, and the timeline along the bottom.
+Drift's window is a header strip over a grid of panels. Which panels you see is
+decided by the active [workspace](./workspaces) — **Edit** opens with assets on
+the left, preview in the center, properties on the right, and the timeline along
+the bottom.
 
 ![Drift main window layout](./assets/main-window.avif)
 
 ## Header
 
-The top bar holds project and export controls:
-
 | Control | What it does |
 |---|---|
-| **Project pill** | Shows the project name and saved/unsaved state. Click to open recent projects, **Initialize new project**, **Open project…**, **Save with media…**, and **Project properties…**. |
-| **Save** | Saves the current project (`Ctrl+S`). |
-| **Extras** | Opens the [Addon Manager](./addons). |
-| **Update badge** | Appears when a newer Drift version is available. |
-| **Export** | Opens the [export](./export) dialog. |
-| **Theme** | Switch between light and dark mode. |
+| **Projects** | Project name and saved state. *Click to switch or start new* — recent projects, new, open, save with media, and project properties. |
+| **Search** (`Ctrl+K`) | Jump to any command, setting, effect, workspace, or clip. |
+| **Ask** (`Ctrl+Shift+K`) | *Describe an edit in plain words and Drift does it*, e.g. “fade in over half a second”. |
+| **Workspace** | Switch workspace. See [Workspaces](./workspaces). |
+| **Video** | Video size, crop, multicam, and pre-rendered sections. |
+| **Marketplace** | Effects, transitions, sound effects, and stock media. |
+| **Extras** | Optional AI engines, models, and add-ons. See [Addons](./addons). |
+| **Settings** | Preferences, appearance, shortcuts, and workspaces. |
+| **Notifications** | Update notices and background job results. |
+| **Help** | Help and support, including **Debug info**. |
+| **Export** | Opens the [export](./export) dialog; shows progress while an export runs. |
 
-## Assets panel (left)
+:::note
+**Ask** needs the Command Bar Model, a small local model of about 490 MB. Drift
+offers to install it the first time you use it. Setting **Working with AI
+agents** to *None* in [Settings → Personalize](./settings) hides the button.
+:::
 
-Tabs for browsing and adding content. Each tab is covered on
+## Assets panel
+
+Tabs for browsing and adding content, covered on
 [Media library](./media-library):
 
-**Media** · **Sounds** · **Text** · **Stickers** · **Shapes** · **Effects** ·
-**Templates** · **Transitions** · **Settings** · **Shortcuts**
+**Media** · **Text** · **Subtitles** · **Speech** · **Stickers** · **Shapes** ·
+**Masks** · **Scenes** · **Effects** · **Templates** · **Transitions** ·
+**Audio FX**
 
-Drag items from most tabs onto the timeline (or onto overlapping clips for
-transitions). The **Settings** and **Shortcuts** tabs configure the project and
-keyboard map instead of adding clips.
+Drag items from most tabs onto the timeline, or onto overlapping clips for
+transitions.
 
-## Preview (center)
+:::tip
+**Labels under panel tabs** in [Settings → Personalize](./settings) puts a name
+under each icon on the side rails.
+:::
 
-The composition at the current playhead. Toolbar controls include:
+## Preview
 
-| Control | What it does |
+The composition at the current playhead. Preview and export share one
+compositor, so what you see is what you get. Toolbar controls cover fit and
+fill, preview quality, guides, zoom, and fullscreen — see [Preview](./preview).
+
+Overlays appear on top of the frame when you transform or crop a clip, draw a
+mask, place a tracker, or fly the [3D](./3d) view.
+
+## Properties panel
+
+Controls for the selected clip. With nothing selected you'll see *“It's empty
+here”* — click a clip on the timeline to edit it.
+
+Tabs appear according to clip type:
+
+| Tab | For |
 |---|---|
-| **Fit / Fill** | Scale the frame inside the viewer. |
-| **Quality** | Full, Half, or Quarter resolution for smoother scrubbing. |
-| **Playback mode** | Prefer fast preview or higher quality. |
-| **Guides** | Rule of thirds, center cross, safe margins (`G` toggles). |
-| **Fullscreen** | Expand the preview. |
+| **General** | Name, timing, enablement. |
+| **Text** | Titles and captions. |
+| **Shape** | Shape overlays. |
+| **Motion** | Lottie animations and SVG drawings. |
+| **3D Model** | `.glb` models and Gaussian splats. |
+| **PDF** | PDF documents. |
+| **Subtitles** | Caption cues on a subtitle clip. |
+| **Transform** | Position, size, rotation, anchor, depth. |
+| **Camera** | Scene camera clips. |
+| **Stabilization** | Smoothing for shaky footage. |
+| **Animation** | Clip-level animation. |
+| **Audio** | Volume, pan, noise removal, auto subtitles. |
+| **Speed** | Speed, reverse, fades. |
+| **Blending** | Blend mode and opacity. |
+| **Masks** | Mask layers on the clip. |
+| **Effects** | The clip's effect stack. |
+| **Audio FX** | The clip's audio effect chain. |
+| **Transition** | A transition between two clips. |
 
-Overlay modes for transform and crop appear when you edit position or crop the
-canvas. Details: [Preview](./preview).
+Overview: [Editing clips](./editing-clips).
 
-## Properties panel (right)
+## Timeline
 
-Shows controls for the selected clip. If nothing is selected you’ll see
-*“It's empty here”* — click a clip on the timeline to edit it.
+Multi-track editor with a toolbar for playback, tools, split helpers, markers,
+snapping, ripple, and zoom. Track types include video, audio, text, subtitle,
+and shape, plus adjustment and transform layers. Full reference:
+[Timeline](./timeline).
 
-Tabs appear based on clip type — **General**, **Text**, **Position & size**,
-**Audio**, **Speed & Fade**, **Layer mix**, **Transition**, **Cutouts**,
-**Effects**, **Subtitles**, **Shape**, and more. Overview:
-[Editing clips](./editing-clips).
+## Panels you can dock
 
-## Timeline (bottom)
-
-Multi-track editor with a toolbar for play/pause, select/cut/trim tools, split
-helpers, copy/paste, freeze frame, bookmarks, snap, ripple, and zoom.
-
-Track types include video, audio, text, subtitle, and shape. Each track can be
-muted or hidden. Full reference: [Timeline](./timeline).
+Beyond the four above, a workspace can hold the **Audio Mixer**, **Color**,
+**Looks**, **Scopes**, **Keyframes**, **Masking**, **Tracking**, **3D
+Viewport**, **Recorder**, **Teleprompter**, **Audio Sheet**, **History**, and
+more. [Workspaces](./workspaces) lists them all and explains how to arrange your
+own.
